@@ -1,10 +1,10 @@
 <!-- BEGIN: MAIN -->
 
-<h3>{PHP.L.market_types_edit} market_types_edit</h3>
+<h3>{PHP.L.market_types_edit}</h3>
 
 <div class="block">
 	<form action="{EDITFORM_ACTION_URL}" method="post" name="newcountry">
-		<h3>{PHP.L.market_types_editor} market_types_editor</h3>
+		<h3>{PHP.L.market_types_editor}</h3>
 		<table class="table">
 			<tr>
 				<td class="coltop width60">{PHP.L.Default}</td>
