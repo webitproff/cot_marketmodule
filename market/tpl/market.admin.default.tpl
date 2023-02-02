@@ -1,6 +1,6 @@
 <!-- BEGIN: MAIN -->
 
-<h3>{PHP.L.market} 454</h3>
+<h3>{PHP.L.market}</h3>
 <ul class="uk-list uk-list-divider">
 	<!-- BEGIN: TYPES -->
 	<li<!-- IF {PHP.p} != 'types' --> class="active"<!-- ENDIF -->><a href="{TYPE_ALL_URL}">{PHP.L.All}</a></li>
