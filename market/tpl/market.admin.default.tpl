@@ -8,7 +8,7 @@
 	<li class="{TYPE_ALL_ACT}"><a href="{TYPE_ROW_URL}">{TYPE_ROW_TITLE}</a></li>
 	<!-- END: TYPES_ROWS -->
 	<!-- END: TYPES -->
-	<li><a href="{TYPES_EDIT}">{PHP.L.market_types_edit}</a>111</li>	
+	<li><a href="{TYPES_EDIT}">{PHP.L.market_types_edit}</a></li>	
 </ul>
 <div class="well">	
 	<form action="{SEARCH_ACTION_URL}" method="get">
