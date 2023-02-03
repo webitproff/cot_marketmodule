@@ -89,7 +89,7 @@
 <p><span style="color:#e74c3c;"><strong>Важно!</strong></span> Если после установки/обновления пропали какие либо надписи в маркете на фронтэнде - смотрим новый файл локализации <a class="branch-name" href="https://github.com/webitproff/cot_marketmodule/blob/80247826e43aecda94c21edff65efb19464bc3ab/market/lang/market.ru.lang.php">market.ru.lang.php</a></p>
 
 
-<p style="warning">Если после установки/обновления пропали какие либо надписи в маркете на фронтэнде - смотрим новый файл локализации <a class="branch-name" href="https://github.com/webitproff/cot_marketmodule/blob/80247826e43aecda94c21edff65efb19464bc3ab/market/lang/market.ru.lang.php">market.ru.lang.php</a></p>
+
 --------
 <ul class="list">
 <li><a href="https://t.me/cotonti" target="_blank">Телеграм по Cotonti</a></li>
