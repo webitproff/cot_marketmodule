@@ -6,7 +6,11 @@
 --------
 <p><strong>Проверял два раза, только установка с нуля! всё старое вычищаем</strong>, качаем <a href="https://github.com/webitproff/cot_marketmodule">новый модуль с репозитория</a></p>
 
-<p>1. Старый модуль деинсталируем и удаляем папку с хоста.</p>
+<p>1. Старый модуль деинсталируем и удаляем папку с хоста.
+в phpMyAdmin проверяем, чтобы не было таблиц
+flance_market
+flance_market_types
+</p>
 
 <p>2. Заливаем новую папку <strong>market</strong> в&nbsp; modules.</p>
 
