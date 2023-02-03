@@ -4,27 +4,13 @@
 --------
 **перед установкой или обновлением полный бекап!!!**
 --------
-<p>старый модуль лучше удалить вместе с папкой и залить на хост папку market отсюда в папку modules
- В шаблоны своей темы берем теги из модуля PROJECTS что касается типов, и там где PRJEDIT_FORM_TYPE  меняем на PRDEDIT_FORM_TYPE</p>
---------
+<p><strong>Проверял два раза, только установка с нуля! всё старое вычищаем</strong>, качаем <a href="https://github.com/webitproff/cot_marketmodule">новый модуль с репозитория</a></p>
+
 <p>1. Старый модуль деинсталируем и удаляем папку с хоста.</p>
 
-<p>2. Заливаем новую папку market в&nbsp; modules.</p>
+<p>2. Заливаем новую папку <strong>market</strong> в&nbsp; modules.</p>
 
-<p>3. Устанавливаем модуль и тут же, вторым действием жмём &quot;ОБНОВИТЬ&quot;!</p>
-
-<p>должно быть такое сообщение</p>
-
-<blockquote>
-<p>&nbsp;&nbsp;&nbsp; Обновление Модуль &quot;market&quot;<br />
-&nbsp;&nbsp;&nbsp; Удалено связок хуков: 13<br />
-&nbsp;&nbsp;&nbsp; Установлено связок хуков: 13<br />
-&nbsp;&nbsp;&nbsp; Блокировки авторизации обновлены<br />
-&nbsp;&nbsp;&nbsp; Установлен патч modules/market/setup/patch_2.7.1.inc: OK<br />
-&nbsp;&nbsp;&nbsp; Модуль &quot;market&quot; обновлен до версии 2.7.1</p>
-</blockquote>
-
-<p>если есть сообщение &quot;<span style="color:#e67e22;"><strong>Модуль &quot;market&quot; обновлен до версии 2.7.1</strong></span>&quot;, - только потом идем в администрирование и забиваем свои типы.</p>
+<p>3. Устанавливаем модуль и тут же идем в администрирование и забиваем свои типы.</p>
 
 <p>никакого <code class="as3 plain">PHP.forpro </code> в TPL шаблонах маркета и близко быть не должно, - только то, что касается типов, которые забиваем в администрировании модуля</p>
 
@@ -93,12 +79,15 @@
 <p>И всё, больше в шаблоны ничего не добавляем!</p>
 
 <p><a href="https://abuyfile.com/market/cotonti?type=1"><strong>Вот в работе</strong></a>.</p>
+
 <p><a href="https://raw.githubusercontent.com/webitproff/cot_marketmodule/main/market_types_3.png"><img alt="" src="https://raw.githubusercontent.com/webitproff/cot_marketmodule/main/market_types_3.png" style="width:200px;height:143px;" /></a></p>
 
 <p><a href="https://raw.githubusercontent.com/webitproff/cot_marketmodule/main/market_types_4.png"><img alt="" src="https://raw.githubusercontent.com/webitproff/cot_marketmodule/main/market_types_4.png" style="width:200px;height:88px;" /></a></p>
+
 <p>&nbsp;</p>
 
-<p>P.S. Можно сделать установку обновлением, то есть поверх существующего рабочего модуля, НО перед закачиванием новых файлов поверх старых, комментируем всё с 24-й по 33-тью строки в файле <a href="https://github.com/webitproff/cot_marketmodule/blob/04793de35265941a71d55f885e1a1c3836060e67/market/market.global.php">market.global.php</a>. И только после обновления, когда появится сообщение &quot;<strong>Установлен патч modules/market/setup/patch_2.7.1.inc: OK</strong>&quot; - снимаем коментарий</p>
+<p><span style="color:#e74c3c;"><strong>Важно!</strong></span> Если после установки/обновления пропали какие либо надписи в маркете на фронтэнде - смотрим новый файл локализации <a class="branch-name" href="https://github.com/webitproff/cot_marketmodule/blob/80247826e43aecda94c21edff65efb19464bc3ab/market/lang/market.ru.lang.php">market.ru.lang.php</a></p>
+
 
 <p style="warning">Если после установки/обновления пропали какие либо надписи в маркете на фронтэнде - смотрим новый файл локализации <a class="branch-name" href="https://github.com/webitproff/cot_marketmodule/blob/80247826e43aecda94c21edff65efb19464bc3ab/market/lang/market.ru.lang.php">market.ru.lang.php</a></p>
 --------
