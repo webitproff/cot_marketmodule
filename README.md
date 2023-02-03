@@ -100,3 +100,5 @@
 
 <p>P.S. Можно сделать установку обновлением, то есть поверх существующего рабочего модуля, НО перед закачиванием новых файлов поверх старых, комментируем всё с 24-й по 33-тью строки в файле <a href="https://github.com/webitproff/cot_marketmodule/blob/04793de35265941a71d55f885e1a1c3836060e67/market/market.global.php">market.global.php</a>. И только после обновления, когда появится сообщение &quot;<strong>Установлен патч modules/market/setup/patch_2.7.1.inc: OK</strong>&quot; - снимаем коментарий</p>
 
+<p style="warning">Если после установки/обновления пропали какие либо надписи в маркете на фронтэнде - смотрим новый файл локализации <a class="branch-name" href="https://github.com/webitproff/cot_marketmodule/blob/80247826e43aecda94c21edff65efb19464bc3ab/market/lang/market.ru.lang.php">market.ru.lang.php</a></p>
+<p>&nbsp;</p>
