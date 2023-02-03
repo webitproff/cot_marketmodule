@@ -32,6 +32,7 @@ flance_market_types
 
 <p>5. add next code in <span style="color:#2980b9;"><strong>market.edit.tpl</strong></span></p>
 
+
 <pre class="brush:as3;">
 &lt;!-- IF {PHP.market_types} --&gt;
           &lt;div class=&quot;uk-margin&quot;&gt;
@@ -41,14 +42,28 @@ flance_market_types
             &lt;/div&gt;
           &lt;/div&gt;
 &lt;!-- ENDIF --&gt;
-&lt;!-- IF {PHP.usr.isadmin} --&gt;	
-	&lt;div class=&quot;uk-margin&quot;&gt;
-	&lt;h4 class=&quot;uk-heading-divider uk-text-primary uk-margin-remove&quot;&gt;{PHP.L.Date}:&lt;/h4&gt;
-		&lt;div class=&quot;uk-form-controls&quot;&gt;
-			{PRDEDIT_FORM_DATE}
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;!-- ENDIF --&gt;	</pre>
+	   &lt;!-- IF {PHP.usr.isadmin} --&gt;
+		   &lt;div class=&quot;uk-margin&quot;&gt;
+			 &lt;h4 class=&quot;uk-heading-divider uk-text-primary uk-margin-remove&quot;&gt;{PHP.L.Date}:&lt;/h4&gt;
+			 &lt;label class=&quot;uk-form-label&quot;&gt;&lt;/label&gt;
+			 &lt;div class=&quot;uk-form-controls&quot;&gt; {PRDEDIT_FORM_DATE} &lt;/div&gt;
+		   &lt;/div&gt;
+	   &lt;!-- ELSE --&gt;
+		   &lt;!-- IF {PHP.cot_plugins_active.paypro} AND {PHP|cot_getuserpro()} --&gt;
+		   &lt;div class=&quot;uk-margin&quot;&gt;
+			 &lt;h4 class=&quot;uk-heading-divider uk-text-primary uk-margin-remove&quot;&gt;{PHP.L.Date}:&lt;/h4&gt;
+			 &lt;label class=&quot;uk-form-label&quot;&gt;&lt;/label&gt;
+			 &lt;div class=&quot;uk-form-controls&quot;&gt; {PRDEDIT_FORM_DATE} &lt;/div&gt;
+		   &lt;/div&gt;
+		   &lt;!-- ELSE --&gt;
+		   &lt;div class=&quot;uk-margin&quot;&gt;
+			 &lt;h4 class=&quot;uk-heading-divider uk-text-primary uk-margin-remove&quot;&gt;{PHP.L.Date}:&lt;/h4&gt;
+			 &lt;label class=&quot;uk-form-label&quot;&gt;&lt;/label&gt;
+			 &lt;div class=&quot;uk-form-controls&quot;&gt; {PHP.item.item_date|cot_date(&#39;d-m-Y&#39;, $this)} &lt;/div&gt;
+		   &lt;/div&gt;
+		   &lt;!-- ENDIF --&gt;
+	   &lt;!-- ENDIF --&gt;</pre>
+
 
 <p>6. add next code in <span style="color:#2980b9;"><strong>market.tpl</strong></span></p>
 
