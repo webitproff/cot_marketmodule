@@ -9,6 +9,7 @@ CREATE TABLE IF NOT EXISTS `cot_market` (
   `item_update` int(11) DEFAULT '0',
   `item_parser` VARCHAR(64) DEFAULT '',
   `item_cat` varchar(255) collate utf8_unicode_ci DEFAULT '',
+  `item_type` int(11) DEFAULT '0',
   `item_title` varchar(255) collate utf8_unicode_ci DEFAULT '',
   `item_alias` varchar(255) collate utf8_unicode_ci DEFAULT '',
   `item_desc` varchar(255) collate utf8_unicode_ci DEFAULT '',
@@ -24,4 +25,10 @@ CREATE TABLE IF NOT EXISTS `cot_market` (
   `item_region` INT( 11 ) DEFAULT '0',
   `item_city` INT( 11 ) DEFAULT '0',
   PRIMARY KEY  (`item_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `cot_market_types` (
+  `type_id` int(10) unsigned NOT NULL auto_increment,
+  `type_title` varchar(255) collate utf8_unicode_ci DEFAULT '',
+  PRIMARY KEY  (`type_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
