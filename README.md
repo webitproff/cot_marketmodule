@@ -1,5 +1,6 @@
 # cot_marketmodule
 Модуль "Маркет" с типами, кастомными метатайтлами и описанием
+<p><a href="https://raw.githubusercontent.com/webitproff/cot_marketmodule/main/market_types_4.png"><img alt="" src="https://raw.githubusercontent.com/webitproff/cot_marketmodule/main/market_types_4.png" /></a></p>
 --------
 **перед установкой или обновлением полный бекап!!!**
 --------
@@ -92,7 +93,9 @@
 <p>И всё, больше в шаблоны ничего не добавляем!</p>
 
 <p><a href="https://abuyfile.com/market/cotonti?type=1"><strong>Вот в работе</strong></a>.</p>
+<p><a href="https://raw.githubusercontent.com/webitproff/cot_marketmodule/main/market_types_3.png"><img alt="" src="https://raw.githubusercontent.com/webitproff/cot_marketmodule/main/market_types_3.png" style="width:200px;height:143px;" /></a></p>
 
+<p><a href="https://raw.githubusercontent.com/webitproff/cot_marketmodule/main/market_types_4.png"><img alt="" src="https://raw.githubusercontent.com/webitproff/cot_marketmodule/main/market_types_4.png" style="width:200px;height:88px;" /></a></p>
 <p>&nbsp;</p>
 
 <p>P.S. Можно сделать установку обновлением, то есть поверх существующего рабочего модуля, НО перед закачиванием новых файлов поверх старых, комментируем всё с 24-й по 33-тью строки в файле <a href="https://github.com/webitproff/cot_marketmodule/blob/04793de35265941a71d55f885e1a1c3836060e67/market/market.global.php">market.global.php</a>. И только после обновления, когда появится сообщение &quot;<strong>Установлен патч modules/market/setup/patch_2.7.1.inc: OK</strong>&quot; - снимаем коментарий</p>
